@@ -63,7 +63,7 @@ export default function VehicleGrid({ vehicles, initialBrand = "" }: { vehicles:
             aria-label="Fahrzeuge durchsuchen"
           />
         </label>
-        <div className="flex gap-3">
+        <div className="flex gap-3 lg:shrink-0">
           <button
             onClick={() => setShowFilters((s) => !s)}
             className="btn btn-ghost !py-3 lg:hidden"
@@ -72,7 +72,7 @@ export default function VehicleGrid({ vehicles, initialBrand = "" }: { vehicles:
             <SlidersHorizontal className="h-4 w-4" />
             Filter {activeCount > 0 && <span className="rounded-full bg-accent-500 px-2 text-xs">{activeCount}</span>}
           </button>
-          <select value={sort} onChange={(e) => setSort(e.target.value as Sort)} className="input !w-auto" aria-label="Sortierung">
+          <select value={sort} onChange={(e) => setSort(e.target.value as Sort)} className="input min-w-40 !w-auto" aria-label="Sortierung">
             <option value="featured">Empfohlen</option>
             <option value="price-asc">Preis aufsteigend</option>
             <option value="price-desc">Preis absteigend</option>

@@ -39,7 +39,11 @@ export default function Hero() {
           {...fade(0.25)}
           className="font-serif-display mt-6 max-w-[62rem] text-balance text-[1.75rem] font-medium uppercase leading-[1.12] text-white sm:text-4xl lg:text-[3rem] xl:text-[3.5rem]"
         >
-          Geprüfte Gebrauchtwagen im Herzen des Rheinlands
+          Geprüfte Gebrauchtwagen
+          <br />
+          im Herzen des
+          <br />
+          Rheinlands
         </motion.h1>
         <motion.p {...fade(0.45)} className="mt-7 max-w-2xl text-base font-light leading-relaxed text-white/85 sm:text-xl">
           Willkommen bei VANTORA Automobile — geprüfte Fahrzeuge, ehrliche Beratung und Garantie bis 24 Monate.

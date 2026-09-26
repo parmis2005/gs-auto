@@ -38,7 +38,7 @@ export default function Header() {
       >
         <div className="container-x flex h-[72px] items-center justify-between lg:h-20">
           <Logo light={onHero} />
-          <nav className="hidden items-center gap-1 lg:flex" aria-label="Hauptnavigation">
+          <nav className="hidden items-center gap-1 xl:flex" aria-label="Hauptnavigation">
             {nav.map((item) => {
               const active = pathname === item.href || pathname.startsWith(item.href + "/");
               return (
@@ -62,7 +62,7 @@ export default function Header() {
               );
             })}
           </nav>
-          <div className="hidden items-center gap-3 lg:flex">
+          <div className="hidden items-center gap-3 xl:flex">
             <a href={site.phoneHref} className={`flex items-center gap-2 text-sm font-medium ${onHero ? "text-white/85 hover:text-white" : "text-slate-700 hover:text-ink-900"}`}>
               <Phone className="h-4 w-4 text-accent-400" />
               {site.phone}
@@ -74,7 +74,7 @@ export default function Header() {
           </div>
           <button
             onClick={() => setOpen(true)}
-            className={`grid h-11 w-11 place-items-center rounded-full border lg:hidden ${onHero ? "border-white/25 bg-white/10 text-white" : "border-ink-900/10 bg-ink-900/5 text-ink-900"}`}
+            className={`grid h-11 w-11 place-items-center rounded-full border xl:hidden ${onHero ? "border-white/25 bg-white/10 text-white" : "border-ink-900/10 bg-ink-900/5 text-ink-900"}`}
             aria-label="Menü öffnen"
           >
             <Menu className="h-5 w-5" />
@@ -89,7 +89,7 @@ export default function Header() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.25 }}
-            className="fixed inset-0 z-[60] flex flex-col bg-white/95 backdrop-blur-xl lg:hidden"
+            className="fixed inset-0 z-[60] flex flex-col bg-white/95 backdrop-blur-xl xl:hidden"
           >
             <div className="container-x flex h-[72px] items-center justify-between">
               <Logo onClick={() => setOpen(false)} />

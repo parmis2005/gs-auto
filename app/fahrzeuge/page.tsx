@@ -20,7 +20,7 @@ export default async function VehiclesPage(props: PageProps<"/fahrzeuge">) {
         text="Jedes Fahrzeug mit DEKRA-Gutachten, lückenloser Historie und mindestens 12 Monaten Garantie. Filtern Sie nach Marke, Kraftstoff oder Budget."
         video={{ src: "/videos/showroom.mp4", poster: "/videos/showroom-poster.jpg" }}
       />
-      <section className="container-x -mt-4 pb-8">
+      <section className="container-x relative z-10 pt-8 pb-8">
         <VehicleGrid vehicles={vehicles} initialBrand={marke} />
       </section>
       <div className="pt-16">
