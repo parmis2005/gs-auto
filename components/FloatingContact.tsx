@@ -9,11 +9,11 @@ export default function FloatingContact() {
       target="_blank"
       rel="noreferrer"
       aria-label="WhatsApp-Beratung starten"
-      className="group fixed bottom-5 right-5 z-40 grid h-12 w-12 place-items-center rounded-full bg-[#25D366] text-white shadow-[0_14px_32px_-12px_rgba(37,211,102,.85),0_0_0_7px_rgba(37,211,102,.10)] ring-1 ring-white/70 transition duration-300 hover:-translate-y-0.5 hover:bg-[#1fbd5a] hover:shadow-[0_18px_40px_-14px_rgba(37,211,102,.95),0_0_0_9px_rgba(37,211,102,.14)] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#25D366]/35 sm:h-14 sm:w-14"
+      className="group fixed bottom-5 right-5 z-40 grid h-10 w-10 place-items-center rounded-full bg-[#25D366] text-white shadow-[0_14px_32px_-12px_rgba(37,211,102,.85),0_0_0_5px_rgba(37,211,102,.10)] ring-1 ring-white/70 transition duration-300 hover:-translate-y-0.5 hover:bg-[#1fbd5a] hover:shadow-[0_18px_40px_-14px_rgba(37,211,102,.95),0_0_0_7px_rgba(37,211,102,.14)] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#25D366]/35 sm:h-11 sm:w-11"
     >
-      <span className="absolute inset-2 rounded-full border border-white/25 bg-white/10 transition group-hover:bg-white/15" aria-hidden />
+      <span className="absolute inset-1.5 rounded-full border border-white/25 bg-white/10 transition group-hover:bg-white/15" aria-hidden />
       <svg
-        className="relative h-5 w-5 sm:h-6 sm:w-6"
+        className="relative h-4 w-4 sm:h-5 sm:w-5"
         viewBox="0 0 24 24"
         aria-hidden="true"
         fill="currentColor"
